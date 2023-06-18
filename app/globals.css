@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-hex: theme(colors.black);
+  --background-hex: theme(colors.white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-hex: theme(colors.white);
+    --background-hex: theme(colors.gray.950);
+  }
+}
+
+body {
+  color: var(--foreground-hex);
+  background: var(--background-hex);
+}
